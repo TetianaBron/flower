@@ -1,0 +1,47 @@
+.wr-flowers {
+  position: relative;
+  top: 50px;
+  left: 100px;
+  max-width: 500px;
+  height: 300px;
+  box-shadow: 0 0 5px #f00;
+  overflow: hidden;
+}
+.flower {
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: 1s disappear-1 1 linear forwards;
+}
+@keyframes disappear-1 {
+  50% {
+    transform: translate(-10px, 25px) scale(2) rotate(135deg);
+  }
+  100% {
+    transform: translate(-20px, 50px) scale(0) rotate(270deg);
+  }
+}
+@keyframes disappear-2 {
+  50% {
+    transform: translate(10px, -25px) scale(2) rotate(-135deg);
+  }
+  100% {
+    transform: translate(20px, 50px) scale(0) rotate(-270deg);
+  }
+}
+@keyframes disappear-3 {
+  50% {
+    transform: rotate(-135deg) translate(10px, -25px) scale(2);
+  }
+  100% {
+    transform: rotate(-270deg) translate(20px, 50px) scale(0);
+  }
+}
+@keyframes disappear-4 {
+  50% {
+    transform: rotate(135deg) translate(10px, -25px) scale(1.5);
+  }
+  100% {
+    transform: rotate(-270deg) translate(20px, 50px) scale(0);
+  }
+}
